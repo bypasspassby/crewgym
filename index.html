@@ -12,6 +12,11 @@
 <meta content="大阪市中央区のCREW GYM 24。初回体験パーソナル1,500円（税込）、50分のカウンセリング付き。初心者でも始めやすいジムです。" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="CREW GYM 24" property="og:site_name"/>
+<link href="https://www.crewgym24.com/" rel="canonical"/>
+<meta content="https://www.crewgym24.com/" property="og:url"/>
+<meta content="https://www.crewgym24.com/images/crewgym.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://www.crewgym24.com/images/crewgym.jpg" name="twitter:image"/>
 <style>
 .header-social{
   display:flex;
@@ -60,8 +65,6 @@ html{
   }
 }
 </style>
-</head>
-<body>
 <style>
   .crewgym24-lp,
   .crewgym24-lp * {
@@ -1135,6 +1138,10 @@ html{
     object-position: center 14%;
   }
 
+  .crewgym24-lp .staff-card__photo--azuma {
+    object-position: center 18%;
+  }
+
   .crewgym24-lp .staff-card__body {
     padding: 24px 24px 22px;
     display: grid;
@@ -1230,6 +1237,10 @@ html{
     .crewgym24-lp .staff-card__photo--kimura {
       object-position: center 12%;
     }
+
+    .crewgym24-lp .staff-card__photo--azuma {
+      object-position: center 16%;
+    }
   }
 
   @media (max-width: 640px) {
@@ -1239,6 +1250,8 @@ html{
   }
 
 </style>
+</head>
+<body>
 <div class="crewgym24-lp" id="crewgym24-lp">
 <header class="site-header">
 <div class="container site-header__inner">
@@ -1256,19 +1269,6 @@ html{
 </svg></a></div>
 </div>
 </header>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var nav = document.querySelector('.crewgym24-lp .site-nav');
-  function resetMobileHeaderNav() {
-    if (!nav || !window.matchMedia('(max-width: 767px)').matches) return;
-    nav.scrollLeft = 0;
-  }
-  resetMobileHeaderNav();
-  window.addEventListener('load', resetMobileHeaderNav);
-  window.addEventListener('pageshow', resetMobileHeaderNav);
-  window.addEventListener('resize', resetMobileHeaderNav);
-});
-</script>
 <main>
 <section class="hero section">
 <div class="container hero__grid">
@@ -1305,7 +1305,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="hero__glow hero__glow--left"></div>
 <div class="hero__glow hero__glow--right"></div>
 <div class="hero__image-wrap">
-<img alt="CREW GYM24のジム内観イメージ" class="hero__image" decoding="async" fetchpriority="high" src="images/crewgym.jpg"/>
+<img alt="CREW GYM24のジム内観イメージ" class="hero__image" decoding="async" fetchpriority="high" src="images/crewgym.jpg" width="1200" height="1600"/>
 </div>
 </div>
 </div>
@@ -1319,25 +1319,25 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 <div class="grid-2">
 <article class="reason-card">
-<img alt="" aria-hidden="true" class="reason-card__icon reason-card__icon--large reason-card__icon--xlarge" src="images/reason01.png"/>
+<img alt="" aria-hidden="true" class="reason-card__icon reason-card__icon--large reason-card__icon--xlarge" loading="lazy" decoding="async" width="86" height="86" src="images/reason01.png"/>
 <div class="reason-card__num">01</div>
 <h3>初回体験パーソナルが1,500円</h3>
 <p>『パーソナルを受けてみたいけど高くて...』という悩みに正面から応えるべく、手頃な価格としました。</p>
 </article>
 <article class="reason-card">
-<img alt="" aria-hidden="true" class="reason-card__icon reason-card__icon--large" src="images/reason02.png"/>
+<img alt="" aria-hidden="true" class="reason-card__icon reason-card__icon--large" loading="lazy" decoding="async" width="76" height="76" src="images/reason02.png"/>
 <div class="reason-card__num">02</div>
 <h3>50分でしっかり体験できる</h3>
 <p>カウンセリングに加え、気になる部位にしっかり効かせる体験トレーニングを実施。短すぎず長すぎない時間で、納得感を持ってお試しいただけます。</p>
 </article>
 <article class="reason-card">
-<img alt="" aria-hidden="true" class="reason-card__icon" src="images/reason03.png"/>
+<img alt="" aria-hidden="true" class="reason-card__icon" loading="lazy" decoding="async" width="64" height="64" src="images/reason03.png"/>
 <div class="reason-card__num">03</div>
 <h3>初心者でも始めやすい</h3>
 <p>運動経験が少ない方でも、一人ひとりのペースに合わせて進められるので安心です。気になることを相談しながら取り組めるため、ジムが初めての方でも無理なく始めやすくなっています。</p>
 </article>
 <article class="reason-card">
-<img alt="" aria-hidden="true" class="reason-card__icon" src="images/reason04.png"/>
+<img alt="" aria-hidden="true" class="reason-card__icon" loading="lazy" decoding="async" width="64" height="64" src="images/reason04.png"/>
 <div class="reason-card__num">04</div>
 <h3>入会後も続けやすい価格帯</h3>
 <p>体験だけで終わらず、その後も無理のない価格で続けやすいのが魅力です。まずは気軽に試してみて、自分に合う通い方を見つけながら継続しやすい環境が整っています。</p>
@@ -1560,7 +1560,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </article>
 <article class="staff-card">
 <div class="staff-card__media">
-<img alt="店長 東" decoding="async" height="760" loading="lazy" src="https://static.wixstatic.com/media/402338_89dd95da736b4af6a89e57891551efb1~mv2.jpg/v1/fill/w_600,h_760,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20210209_155450.jpg" width="600"/>
+<img alt="店長 東" class="staff-card__photo staff-card__photo--azuma" decoding="async" height="760" loading="lazy" src="images/azuma.jpg" width="600"/>
 </div>
 <div class="staff-card__body">
 <span class="staff-card__role">Manager</span>
