@@ -1101,13 +1101,38 @@ html{
   .crewgym24-lp .staff-card__media {
     background: linear-gradient(180deg, rgba(15,23,42,0.04), rgba(15,23,42,0.08));
     min-height: 100%;
+    overflow: hidden;
   }
 
   .crewgym24-lp .staff-card__media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 18%;
     display: block;
+  }
+
+  .crewgym24-lp .staff-card__photo--tanaka {
+    object-position: center 20%;
+  }
+
+  .crewgym24-lp .staff-card__media--matsuoka {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(180deg, #0b1020, #121a2f);
+  }
+
+  .crewgym24-lp .staff-card__photo--matsuoka {
+    width: 76%;
+    height: 76%;
+    margin-top: 12%;
+    object-fit: contain;
+    object-position: center top;
+  }
+
+  .crewgym24-lp .staff-card__photo--kimura {
+    object-position: center 14%;
   }
 
   .crewgym24-lp .staff-card__body {
@@ -1187,7 +1212,23 @@ html{
     }
 
     .crewgym24-lp .staff-card__media {
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 4 / 5;
+    }
+
+    .crewgym24-lp .staff-card__photo--tanaka {
+      object-position: center 18%;
+    }
+
+    .crewgym24-lp .staff-card__photo--matsuoka {
+      width: 72%;
+      height: 72%;
+      margin-top: 14%;
+      object-fit: contain;
+      object-position: center top;
+    }
+
+    .crewgym24-lp .staff-card__photo--kimura {
+      object-position: center 12%;
     }
   }
 
@@ -1465,7 +1506,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="staff-grid">
 <article class="staff-card">
 <div class="staff-card__media">
-<img alt="トレーナー 田中 江梨" decoding="async" height="760" loading="lazy" src="https://static.wixstatic.com/media/402338_f3818569af1d4cad8febd1b369813d01~mv2.jpg/v1/fill/w_600,h_760,al_c,q_80,enc_avif,quality_auto/IMG_5459.jpg" width="600"/>
+<img alt="トレーナー 田中 江梨" class="staff-card__photo staff-card__photo--tanaka" decoding="async" height="516" loading="lazy" src="images/tanaka.jpg" width="775"/>
 </div>
 <div class="staff-card__body">
 <span class="staff-card__role">Trainer</span>
@@ -1483,8 +1524,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 </article>
 <article class="staff-card">
-<div class="staff-card__media">
-<img alt="トレーナー 松岡 千尋" src="https://static.wixstatic.com/media/402338_75546ef6d2f5442eb50476e19dc96260~mv2.jpg/v1/fill/w_600,h_760,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/bandicam%202025-05-27%2015-10-57-277.jpg"/>
+<div class="staff-card__media staff-card__media--matsuoka">
+<img alt="トレーナー 松岡 千尋" class="staff-card__photo staff-card__photo--matsuoka" decoding="async" height="1111" loading="lazy" src="images/matsuoka.jpg" width="811"/>
 </div>
 <div class="staff-card__body">
 <span class="staff-card__role">Trainer</span>
@@ -1502,7 +1543,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </article>
 <article class="staff-card">
 <div class="staff-card__media">
-<img alt="トレーナー 木村 ショーン" decoding="async" height="760" loading="lazy" src="https://static.wixstatic.com/media/402338_0fa258f434a9476c857a04bfa67c75d2~mv2.jpg/v1/fill/w_600,h_760,al_c,q_80,enc_avif,quality_auto/bandicam%202023-02-10%2013-44-46-924.jpg" width="600"/>
+<img alt="トレーナー 木村 ショーン" class="staff-card__photo staff-card__photo--kimura" decoding="async" height="1279" loading="lazy" src="images/kimura.jpg" width="1017"/>
 </div>
 <div class="staff-card__body">
 <span class="staff-card__role">Trainer</span>
